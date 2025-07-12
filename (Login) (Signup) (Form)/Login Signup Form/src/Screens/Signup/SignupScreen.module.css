@@ -1,0 +1,131 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.mainDiv {
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.div1 {
+  width: 50%;
+  background: linear-gradient(136deg, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading1 {
+  margin-bottom: 20px;
+}
+
+.para1 {
+  font-size: 1rem;
+}
+
+.div2 {
+  width: 50%;
+  padding: 40px 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.underline {
+  width: 60px;
+  height: 5px;
+  background-color: black;
+  margin: -20px auto 30px auto;
+}
+
+.input1,
+.input2,
+.input3 {
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  color: black;
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px 40px 10px 10px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: right center;
+}
+
+.input1 {
+  background-image: url("https://static.thenounproject.com/png/1081856-200.png");
+}
+
+.input2 {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/006/697/974/non_2x/mail-email-icon-template-black-color-editable-mail-email-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg");
+}
+
+.input3 {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/335/856/small_2x/password-lock-icon-free-vector.jpg");
+  background-size: 20px;
+}
+
+::placeholder {
+  color: black;
+}
+
+.button1 {
+  color: white;
+  background-color: rgb(16, 16, 109);
+  padding: 10px 60px;
+  border-radius: 20px;
+  border: none;
+  display: block;
+  margin: 30px auto;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.para1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .mainDiv {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .div1,
+  .div2 {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .input1,
+  .input2,
+  .input3 {
+    width: 90%;
+  }
+
+  .underline {
+    margin: -20px auto 30px auto;
+  }
+}

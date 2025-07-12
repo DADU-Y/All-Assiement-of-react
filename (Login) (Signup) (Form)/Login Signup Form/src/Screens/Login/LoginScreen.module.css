@@ -1,0 +1,116 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.mainDiv {
+  box-shadow: 0px 0px 10px black;
+  border-radius: 5px;
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  min-height: 80vh;
+  background-color: white;
+}
+
+.div1 {
+  flex: 1;
+  background: linear-gradient(136deg, rgb(0, 100, 0) 50%, rgb(255, 255, 255) 50%);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.heading1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.para1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.button1 {
+  color: white;
+  background-color: darkgreen;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 15px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/* Form Section */
+.div2 {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div2 .heading1 {
+  color: black;
+  margin-bottom: 30px;
+}
+
+.div2 .para1,
+.div2 .para2 {
+  color: gray;
+  margin: 10px 0 5px;
+}
+
+.input1,
+.input2 {
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.loginButton {
+  color: green;
+  background-color: white;
+  padding: 10px 80px;
+  border: 1px solid green;
+  border-radius: 20px;
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.para3 {
+  color: green;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .mainDiv {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .div1 {
+    border-radius: 5px 5px 0 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .div2 {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .loginButton {
+    width: 100%;
+    padding: 10px;
+  }
+}
